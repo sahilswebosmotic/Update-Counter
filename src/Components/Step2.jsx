@@ -21,17 +21,11 @@ const Step2 = () => {
         updateUI() 
     }
 
-    function handleChange(e) {
-    counterRef.current = Number(e.target.value) || 0;
-    updateUI();
-    }
-
-
     return (
         <div className="min-h-screen bg-zinc-900 flex items-center justify-center">
             <div  className=" border border-zinc-600 rounded-xl p-10 bg-zinc-800 shadow-2xl">
                 <h1   className="text-4xl font-bold text-white text-center mb-10">
-                    Counter: <span id="counter-span" ></span> 
+                    Counter: <span id="counter-span">0</span> 
                 </h1>
 
                 <div className="flex items-center justify-center gap-6">
@@ -48,7 +42,6 @@ const Step2 = () => {
                         type="text"
                         id="counter-input"
                         defaultValue={0}
-                        onChange={handleChange}
                         ref={counterRef}
                         className="w-40 bg-zinc-900 border border-zinc-600 rounded px-3 py-2 text-white"
                     />

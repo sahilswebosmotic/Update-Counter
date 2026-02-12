@@ -4,7 +4,8 @@ const Step2 = () => {
     const counterRef = useRef(0);
 
     function getElements() {
-        const span = counterRef.current.querySelector('span');
+        const span = counterRef.current
+
         const input = counterRef.current.querySelector('input');
         return { span, input };
     }
@@ -53,12 +54,6 @@ const Step2 = () => {
                         +
                     </button>
                 </div>
-                    {/* <CounterControl
-                    text= 'Timer'
-                    value = {counterRef}
-                    onDecrement={handleDecrement}
-                    onIncrement={handleIncrement}
-                    /> */}
             </div>
         </div>
     );

@@ -1,5 +1,4 @@
 import React, {  useRef } from "react";
-// import CounterControl from "./CounterControl";
 
 const Step2 = () => {
     const counterRef = useRef(0);

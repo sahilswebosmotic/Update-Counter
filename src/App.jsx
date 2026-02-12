@@ -4,7 +4,6 @@ import Step2 from './Components/Step2'
 import Step3 from './Components/Step3'
 import Step4 from './Components/Step4'
 import Header from './Components/Header'
-// import Step2d from './Components/Step2d'
 import { Routes,Route, BrowserRouter,Link } from 'react-router-dom'
 function App() {
   return (
